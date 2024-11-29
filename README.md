@@ -53,6 +53,16 @@ The notebook is structured into three main sections:
   This final section allows to visualise the results such as the final functions approxiated by the neural network and the progress of each loss component. It offers also the possibility to save the model along with some characteristic elements.
 &nbsp;
 
+### Repository Content
+
+- **Data**:  
+  This folder contains the data that was simulated using the NFB model and that was used to test the implementations and train the SBINN.
+- **Plots**:  
+  This folder contains the plot of the final prediction of a given configuration of the SBINN as well as the plot of the loss progress for each loss component.
+- **Model**:
+  This folder contains the data of all models that were trained. After loading, it can contain information about the model parameters, the final epoch, the early stopping patience or learning rate scheduler characteristics depending on the case.
+
+
 ### References
 
 [1]  Bischof and Kraus (2021). Multi-Objective Loss Balancing for Physics-Informed Deep Learning. [DOI](https://doi.org/10.48550/arXiv.2110.09813)  
