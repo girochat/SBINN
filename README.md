@@ -3,7 +3,9 @@
 
 This repository contains the code to implement a Systems Biology Informed Neural Network (SBINN), a novel approach inspired from Physics-Informed Neural Networks (PINNs) which integrates scientific knowledge into neural network architectures in the form of ODEs/PDEs. PINNs represent a powerful tool for incorporating mechanistic knowledge from physics with the flexibility and learning capabilities of neural networks. It can be used for forward (dynamics prediction) and reverse modeling (parameter inference), and for equation discovery using additional tools and methods such as SINDy for symbolic regression.  
 
-(PINN schematic)
+<p align="center">
+<img width="578" alt="sbinn_schematic" src="https://github.com/user-attachments/assets/08b7ded0-cd80-4118-88a8-deb7ab11b1b2">
+</p>
 
 In this project, several strategies were investigated to improve the convergence of vanilla Physics-Informed Neural Networks (PINNs) with regard to biological systems. In particular, the focus was on adaptive weighting strategies for the multi-component loss function of PINN/SBINNs and addressing convergence issues when increasing the frequency of the target function(s).  
 Besides the basic SBINN Implementation which consists in a fully connected feedforward neural network with early stopping and learning rate scheduling, the following algorithms were implemented: 
@@ -45,17 +47,18 @@ The notebook is structured into three main sections:
   This section contains the implementation of the algorithms designed to improve the SBINN convergence. There is a dedicated function for the ReLoBRaLo algorithm, the importance sampling algorithm and the heuristic loss normalisation algorithm.  
   &nbsp;
 - SBINN training:  
-  This final section contains the function implementing the training loop.  
+  This section contains the function implementing the training loop.  
 &nbsp;
-  
+- Plotting and Saving:
+  This final section allows to visualise the results such as the final functions approxiated by the neural network and the progress of each loss component. It offers also the possibility to save the model along with some characteristic elements.
+&nbsp;
 
 ### References
 
-[1]  
-[2]
-[3]
-[4]
+[1]  Bischof and Kraus (2021). Multi-Objective Loss Balancing for Physics-Informed Deep Learning. [DOI](https://doi.org/10.48550/arXiv.2110.09813)  
+[2]  Nabian et al. (2021). Efficient training of physics-informed neural networks via importance sampling. [DOI](https://doi.org/10.48550/arXiv.2104.12325)  
+[3]  Daniels et al. (2018). Chapter 13: Parameter Estimation, Sloppiness, and Model Identifiability in "Quantitative Biology: Theory, Computational Methods, and Models".   
 
 ### License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [license file](LICENSE.txt). file for details.
