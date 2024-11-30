@@ -58,7 +58,7 @@ The notebook is structured into three main sections:
 - **Data**:  
   This folder contains the data that was simulated using the NFB model and that was used to test the implementations and train the SBINN.
 - **Plots**:  
-  This folder contains the plot of the final prediction of a given configuration of the SBINN as well as the plot of the loss progress for each loss component.
+  This folder contains the plot of the final prediction of a given configuration of the SBINN as well as the plot of the loss progress for each loss component. A video of the training progress is also provided for each model.
 - **Models**:
   This folder contains the data of all models that were trained. After loading, it can contain information about the model parameters, the final epoch, the early stopping patience or learning rate scheduler characteristics depending on the case.
 
