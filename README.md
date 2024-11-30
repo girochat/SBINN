@@ -36,7 +36,7 @@ The code consists into the Jupyter notebook `SBINN.ipynb` that is organised into
 directory:
   `jupyter-lab`
 
-The notebook is structured into three main sections:
+Here is a description of the structure of the notebook:
 - SBINN setup:  
   This section contains all helper functions necessary to plot the results and define the ODE system for the physics component loss. It also contains the model class to define the neural network.  
   &nbsp;
