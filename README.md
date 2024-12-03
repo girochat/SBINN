@@ -27,8 +27,8 @@ To test the implementation on a biological model, a theoretical model was used t
     `cd <path_to_repository>/SBINN`
 
 2. Install Dependencies:  
-Use the provided requirements.txt to set up the environment with conda (see [install conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)):  
-   conda install -r requirements.txt
+Use the provided YAML file to set up the environment with conda (see [install conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)):  
+   conda env create -f sbinn_environment.yaml
 
 ### Usage
 
